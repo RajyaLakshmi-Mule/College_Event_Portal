@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEC Fest 2026 | College Event Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">PEC<span>FEST</span></a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="tag">PRATHYUSHA ENGINEERING COLLEGE</p>
+        <h1>PEC FEST <span>2026</span></h1>
+        <p class="hero-text">One campus. Many talents. One unforgettable celebration.</p>
+        <div class="hero-buttons">
+          <a href="#events" class="btn primary">Explore Events</a>
+          <a href="#register" class="btn secondary">Register Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcement">
+      <strong>📢 Announcement:</strong>
+      <span>Registrations are open! Register before the event slots are filled.</span>
+    </section>
+
+    <section id="events" class="section">
+      <div class="section-title">
+        <p>WHAT'S HAPPENING</p>
+        <h2>Featured Events</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <div class="event-icon">💻</div>
+          <h3>Code Clash</h3>
+          <p>Competitive coding challenge for problem-solving enthusiasts.</p>
+          <span>🕐 10:00 AM</span>
+          <button class="small-btn" onclick="selectEvent('Code Clash')">Register</button>
+        </article>
+        <article class="event-card">
+          <div class="event-icon">🎤</div>
+          <h3>Battle of Bands</h3>
+          <p>Live music competition featuring talented student bands.</p>
+          <span>🕐 2:00 PM</span>
+          <button class="small-btn" onclick="selectEvent('Battle of Bands')">Register</button>
+        </article>
+        <article class="event-card">
+          <div class="event-icon">💃</div>
+          <h3>Dance Arena</h3>
+          <p>Show your best moves in solo and group dance categories.</p>
+          <span>🕐 4:00 PM</span>
+          <button class="small-btn" onclick="selectEvent('Dance Arena')">Register</button>
+        </article>
+        <article class="event-card">
+          <div class="event-icon">🎨</div>
+          <h3>Art Attack</h3>
+          <p>Creative art contest where imagination takes the stage.</p>
+          <span>🕐 11:30 AM</span>
+          <button class="small-btn" onclick="selectEvent('Art Attack')">Register</button>
+        </article>
+        <article class="event-card">
+          <div class="event-icon">🏆</div>
+          <h3>Quiz Masters</h3>
+          <p>Test your knowledge across technology, sports and pop culture.</p>
+          <span>🕐 12:30 PM</span>
+          <button class="small-btn" onclick="selectEvent('Quiz Masters')">Register</button>
+        </article>
+        <article class="event-card">
+          <div class="event-icon">📸</div>
+          <h3>Photo Walk</h3>
+          <p>Capture the best moments and compete for the photography prize.</p>
+          <span>🕐 3:00 PM</span>
+          <button class="small-btn" onclick="selectEvent('Photo Walk')">Register</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section alt">
+      <div class="section-title">
+        <p>PLAN YOUR DAY</p>
+        <h2>Event Schedule</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Time</th><th>Event</th><th>Venue</th><th>Category</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10:00 AM</td><td>Code Clash</td><td>Lab Block</td><td>Technical</td></tr>
+            <tr><td>11:30 AM</td><td>Art Attack</td><td>Seminar Hall</td><td>Creative</td></tr>
+            <tr><td>12:30 PM</td><td>Quiz Masters</td><td>Auditorium</td><td>General</td></tr>
+            <tr><td>2:00 PM</td><td>Battle of Bands</td><td>Open Stage</td><td>Cultural</td></tr>
+            <tr><td>3:00 PM</td><td>Photo Walk</td><td>Campus</td><td>Photography</td></tr>
+            <tr><td>4:00 PM</td><td>Dance Arena</td><td>Main Ground</td><td>Cultural</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="section-title">
+        <p>MEMORIES</p>
+        <h2>Event Gallery</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">🎭<span>Stage</span></div>
+        <div class="gallery-item">🎶<span>Music</span></div>
+        <div class="gallery-item">💡<span>Innovation</span></div>
+        <div class="gallery-item">🏅<span>Winners</span></div>
+        <div class="gallery-item">🎉<span>Celebration</span></div>
+        <div class="gallery-item">🤝<span>Campus Life</span></div>
+      </div>
+    </section>
+
+    <section id="register" class="section alt">
+      <div class="section-title">
+        <p>JOIN THE FEST</p>
+        <h2>Event Registration</h2>
+      </div>
+      <form id="registrationForm" class="form-card">
+        <div class="form-row">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div>
+            <label for="roll">Roll Number</label>
+            <input id="roll" type="text" placeholder="Enter roll number" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div>
+            <label for="event">Select Event</label>
+            <select id="event" required>
+              <option value="">Choose an event</option>
+              <option>Code Clash</option>
+              <option>Battle of Bands</option>
+              <option>Dance Arena</option>
+              <option>Art Attack</option>
+              <option>Quiz Masters</option>
+              <option>Photo Walk</option>
+            </select>
+          </div>
+        </div>
+        <label for="message">Message (optional)</label>
+        <textarea id="message" rows="4" placeholder="Any special requirements?"></textarea>
+        <button class="btn primary" type="submit">Submit Registration</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-title">
+        <p>GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <h3>📍 College Campus</h3>
+          <p>Prathyusha Engineering College<br>Chennai, Tamil Nadu</p>
+        </div>
+        <div>
+          <h3>📧 Email</h3>
+          <p>fest@pec.edu.in</p>
+        </div>
+        <div>
+          <h3>📞 Phone</h3>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 PEC FEST. College Event Portal.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
